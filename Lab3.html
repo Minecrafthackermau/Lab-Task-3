@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Lab Task 3</title>
+	<style>
+
+		#background{
+			background-image: url('images/stars-06.jpg');
+			background-position: 0px 0px;
+			width: 100%;
+			height: 100%;
+			animation: stars 5s linear infinite;
+					
+		}
+
+		@keyframes stars{
+			from{background-position: 0% 0%;}
+			to{background-position: 100% 0%;}
+
+		}
+
+
+		#object{
+			background-image: url('images/plane.png');
+			width:100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: 10% 50%;
+			
+	
+		}
+
+		#object:target{
+			background-position: 10% 80%;
+		}
+	
+		#object a{
+			margin:2%;
+
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<div id='background'>
+		<div id='object'>
+			<div style="padding: 10%">
+				<a href='#'><button>up</button></a>
+				<a href='#object'><button>down</button></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
